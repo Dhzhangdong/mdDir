@@ -41,3 +41,5 @@
 
 ## 在docker中使用
 
+听说翻墙是犯法的，因此无法push docker image .
+

@@ -1,4 +1,4 @@
-import { useParams } from '@/.umi/exports';
+// import { useParams } from '@/.umi/exports';
 import {
   GithubFilled,
   InfoCircleFilled,
@@ -9,7 +9,7 @@ import {
 import { PageContainer, ProCard, ProLayout } from '@ant-design/pro-components';
 import { Button, Input } from 'antd';
 import { Children, useState } from 'react';
-import { Link, Outlet } from 'umi';
+import { Link, Outlet, useParams } from 'umi';
 import request from 'umi-request';
 
 export default () => {

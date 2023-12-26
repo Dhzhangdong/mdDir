@@ -23,14 +23,14 @@ jobs:
         with:
           dotnet-version: '7.0.x'
 
-      - run: dotnet publish -c Release -o ./publish
+      - run: dotnet publish mddir.sln -c Release -o ./publish
 
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKERHUBNAME }}
           password: ${{ secrets.DOCKERHUBPWD }}
-          
+
       - uses: docker/build-push-action@v2
         with:
           context: .

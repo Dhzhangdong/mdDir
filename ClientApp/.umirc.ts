@@ -7,7 +7,7 @@ export default defineConfig({
   ],
   npmClient: 'npm',
   copy: [
-    { from: "src/doc", to: "dist/doc" }
+    // { from: "src/doc", to: "dist/doc" }
   ],
   esbuildMinifyIIFE: true,
 });
